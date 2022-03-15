@@ -1,0 +1,53 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Lab3package
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of Lab3package is to thin the large shape files and convert it into a data frame containing Longitude, Latitude, group and order so that you can make a polygon figure using this data frame.
+
+## Installation
+
+You can install the development version of Lab3package from [GitHub](https://github.com/) with:
+
+```{r, eval=FALSE, echo=TRUE}
+# install.packages("devtools")
+devtools::install_github("Stat585-at-ISU/lab-3-team-7")
+```
+
+## Example
+
+This is a basic example to show how to use functions in this package to create geometric data frame and some implementations.
+
+```{r data example}
+library(Lab3package)
+data("Yemen")
+```
+
+First, you can download a shape file of a country of your choice. Then, you can either read the file using `sf::read_sf()`first or just use the file path to try the following codes:
+
+
+```{r, create polygon figure }
+library(tidyverse)
+
+df <- team_2(Yemen, 0.1)
+
+df %>%
+  ggplot(aes(x = long, y = lat, group = group)) + geom_polygon()
+
+
+```

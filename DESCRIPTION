@@ -1,0 +1,25 @@
+Package: Lab3package
+Type: Package
+Title: Helper functions to create a data frame from  a `geometry` variable
+Version: 0.0.0.9000
+Authors@R: c(person("Jinji", "Pang", email="kimkipang@gmail.com", role = c("aut", "cre")),
+             person("Yunhui", "Qi", email="qyh@iastate.edu", role = "aut")) 
+Maintainer: Jinji Pang <kimkipang@gmail.com>
+Description: Helper functions to turn shapefile into a single data frame with 
+    variables longitude, latitude, group, order. 
+License: MIT + file LICENSE
+Install: devtools::install_github("Stat585-at-ISU/lab-3-team-7"")
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
+Imports:
+    sf (>= 1.0.0),
+    purrr(>= 0.3.4),
+    ggplot2(>= 3.3.5),
+    tidyr(>= 1.1.4),
+    rmapshaper(>= 0.4.5),
+    dplyr(>= 1.0.7),
+    rlang(>= 0.4.10)
+LazyData: true

@@ -1,0 +1,15 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^README.*$
+^docs$
+^LICENSE\.md$
+^README\.Rmd$
+^lab2\-scripts$
+
+^_pkgdown\.yml$
+^pkgdown$
+^\.github$
+^.*\.tar\.gz$
+
+^doc$
+^Meta$
