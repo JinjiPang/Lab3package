@@ -17,7 +17,7 @@ You can install the development version of Lab3package from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("Stat585-at-ISU/lab-3-team-7")
+devtools::install_github("JinjiPang/Lab3package")
 ```
 
 ## Example
