@@ -54,4 +54,4 @@ df %>%
   ggplot(aes(x = long, y = lat, group = group)) + geom_polygon()
 ```
 
-<img src="man/figures/README-create polygon figure-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />

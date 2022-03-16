@@ -2,6 +2,7 @@
 ^\.Rproj\.user$
 ^README.*$
 ^docs$
+^image$
 ^LICENSE\.md$
 ^README\.Rmd$
 ^lab2\-scripts$

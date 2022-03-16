@@ -41,7 +41,7 @@ data("Yemen")
 First, you can download a shape file of a country of your choice. Then, you can either read the file using `sf::read_sf()`first or just use the file path to try the following codes:
 
 
-```{r, create polygon figure }
+```{r }
 library(tidyverse)
 
 df <- team_2(Yemen, 0.1)
