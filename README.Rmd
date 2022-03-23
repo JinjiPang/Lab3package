@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of Lab3package is to thin the large shape files and convert it into a data frame containing Longitude, Latitude, group and order so that you can make a polygon figure using this data frame.
+The goal of Lab3package is to thin the large shape files and convert it into a data frame containing Longitude, Latitude, group, order and NAME_1 or HASC_1 so that you can make a polygon figure colored by region(NAME_1 or HASC_1) using this data frame.
 
 ## Installation
 
@@ -40,14 +40,53 @@ data("Yemen")
 
 First, you can download a shape file of a country of your choice. Then, you can either read the file using `sf::read_sf()`first or just use the file path to try the following codes:
 
+#### team_2 
+
+This function will return a data frame with four basic variables, which are long, lat, order, and group.
 
 ```{r }
 library(tidyverse)
 
-df <- team_2(Yemen, 0.1)
+df1 <- team_2(Yemen, 0.1)
 
-df %>%
+df1 %>%
   ggplot(aes(x = long, y = lat, group = group)) + geom_polygon()
 
 
 ```
+
+#### team_5 
+
+This function will return a data frame with five basic variables, which are long, lat, order, group, and HASC_1.
+
+
+```{r }
+library(tidyverse)
+
+df2 <- team_5(Yemen, 0.1)
+
+df2 %>%
+  ggplot(aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = HASC_1))
+
+
+```
+
+
+#### team_6 
+
+This function will return a data frame with 14 variables, basically it keeps all the original variables and add three more variables long, lat, and group.
+
+
+```{r }
+library(tidyverse)
+
+df3 <- team_6(Yemen, 0.1)
+
+df3 %>%
+  ggplot(aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = NAME_1))
+
+
+```
+
+
+

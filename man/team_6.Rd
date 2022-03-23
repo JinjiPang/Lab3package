@@ -19,14 +19,15 @@ Convert shape file into a data frame using team_6 lab2
 }
 \examples{
 library(Lab3package)
-data("France")
+data("Yemen")
 
-df <- team_6(France, 0.1)
+df <- team_6(Yemen, 0.1)
 
 \dontrun{
+library(tidyverse)
 library(ggplot2)
 df \%>\%
-  ggplot(aes(x = long, y = lat, group = group)) + geom_polygon()
+  ggplot(aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = NAME_1))
 }
 
 }

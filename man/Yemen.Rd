@@ -3,7 +3,7 @@
 \docType{data}
 \name{Yemen}
 \alias{Yemen}
-\title{Data description}
+\title{Shape files of Yemen}
 \format{
 An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 21 rows and 11 columns.
 }
@@ -14,6 +14,6 @@ An object of class \code{sf} (inherits from \code{tbl_df}, \code{tbl}, \code{dat
 Yemen
 }
 \description{
-"Yemen" is created by read_sf("gadm36_YEM_1.shp") file form online source.
+A dataset containing geographic information of the polygons and the additional information, "Yemen" is created by read_sf("gadm36_YEM_1.shp") file form online source.
 }
 \keyword{datasets}
