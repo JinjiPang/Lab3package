@@ -26,6 +26,7 @@ team_6 <- function(file, tolerance = 0.1){
   NAME_1 <- NULL
   group <- NULL
   data0 <- NULL
+  order <- NULL
   if ("character" %in% class(file)) {
     ozbig <- sf::read_sf(file)
   }
@@ -52,7 +53,7 @@ team_6 <- function(file, tolerance = 0.1){
         .f = function(x) {
           x %>% flatten() %>%
             map_df(.id = "group", .f =  function(dat) {
-              data.frame(long = dat[,1], lat = dat[,2], group = rep(rnorm(1), nrow(dat)))
+              data.frame(long = dat[,1], lat = dat[,2], group = rep(rnorm(1), nrow(dat)), order = 1:nrow(dat))
             })
         }
       )

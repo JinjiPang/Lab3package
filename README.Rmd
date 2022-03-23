@@ -74,7 +74,7 @@ df2 %>%
 
 #### team_6 
 
-This function will return a data frame with 14 variables, basically it keeps all the original variables and add three more variables long, lat, and group.
+This function will return a data frame with 15 variables, basically it keeps all the original variables and add three more variables long, lat, group, order and NAME_1.
 
 
 ```{r }

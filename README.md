@@ -80,9 +80,9 @@ df2 %>%
 
 #### team\_6
 
-This function will return a data frame with 14 variables, basically it
+This function will return a data frame with 15 variables, basically it
 keeps all the original variables and add three more variables long, lat,
-and group.
+group, order and NAME\_1.
 
 ``` r
 library(tidyverse)
